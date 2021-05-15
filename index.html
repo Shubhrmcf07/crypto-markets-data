@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <title>ShubRM</title>
+  </head>
+  <body onload="func()">
+    <div class="container">
+      <nav class="main-nav">
+        <h2 id="main-name">Shub<span>RM</span></h2>
+
+        <ul id="main-nav-ul">
+          <li><a href="#">TRADE</a></li>
+          <li><a href="#">MARKETS</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">ORDERS</a></li>
+        </ul>
+
+        <div class="right-nav">
+          <ul id="right-nav-ul">
+            <li><a href='#'><i class="fas fa-headset"></a></i></li>
+            <li><a href="#"><i class="far fa-bell"></i></a></li>
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">REGISTER</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="tab-bar">
+        <button onclick="getMarkets('All')">
+          All
+        </button><button onclick="getMarkets('BTC')">BTC</button><button onclick="getMarkets('INR')">INR</button>
+
+        <button onclick="getMarkets('USDT')">USDT</button>
+        
+        <button onclick="getMarkets('BNB')">BNB</button>
+
+        <button onclick="getMarkets('USD')">USD</button>
+        <button onclick="getMarkets('ETH')">ETH</button>
+        <button onclick="getMarkets('TRX')">TRX</button>
+        <button onclick="getMarkets('USDC')">USDC</button>
+        <button onclick="getMarkets('BUSD')">BUSD</button>
+      </div>
+
+      <div id="container-markets">
+        <table id="tickers">
+          <tr>
+            <th>Exchange</th>
+            <th>24 Hour Change</th>
+            <th>High</th>
+            <th>Low</th>
+            <th>Volume</th>
+            <th>LTP</th>
+            <th>Updated At</th>
+          </tr>
+        </table>
+      </div>
+    </div> 
+    <script src="./public/js/scripts.js"></script>
+  </body>
+</html>

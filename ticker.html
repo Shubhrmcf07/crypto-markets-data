@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <title>ShubRM</title>
+  </head>
+  <body onload="tickerFunction()">
+    <div class="container">
+      <nav class="main-nav">
+        <h2>Shub<span>RM</span></h2>
+
+        <ul id="main-nav-ul">
+          <li><a href="#">TRADE</a></li>
+          <li><a href="#">MARKETS</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">ORDERS</a></li>
+        </ul>
+
+        <div class="right-nav">
+          <ul id="right-nav-ul">
+            <li><a href='#'><i class="fas fa-headset"></a></i></li>
+            <li><a href="#"><i class="far fa-bell"></i></a></li>
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">REGISTER</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="description">
+          <div class="desc"><div class="details">
+
+            <h1 id="coin-name"></h1>
+            <h4 id="symbol">BTC</h4>
+            <h6 id="volume"></h6>
+          </div>
+
+          <div class="price">
+              <h1 id="LTP"></h1>
+              <h4 id="change_24_hr"></h4>
+          </div></div>
+          <button>TRADE NOW</button>
+      </section>
+
+      <div class="tab-bar">
+          <button id="ticker-details" onclick="getTickerDetails()">Details</button>
+          <button id="ticker-charts" onclick="getChart()">Charts</button>
+          <button id="ticker-order-books" onclick="getOrderBooks()">Order Books</button>
+          <button id="ticker-trading-history" onclick="getTradingHistory()">Trade History</button>
+      </div>
+
+      <section id=""></section>
+
+      <section id="ticker-container">
+      </section>
+
+      </div>
+
+    <script src="./public/js/scripts.js"></script>
+      </body>
+      </html>

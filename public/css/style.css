@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+a {
+  color: #2f2f2f;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: darkcyan 1px solid;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #2f2f2f;
+  font-weight: bold;
+}
+
+.fa-headset,
+.fa-bell {
+  font-size: 20px;
+}
+
+.fa-headset:hover,
+.fa-bell:hover {
+  font-size: 23px;
+}
+
+.main-nav ul li a:hover {
+  color: darkcyan;
+  font-size: 15.5px;
+}
+
+#main-nav-ul {
+  flex: 1;
+  padding: 5px;
+}
+
+#main-nav-ul li {
+  margin-left: 20px;
+}
+
+#right-nav-ul li {
+  margin-left: 20px;
+}
+
+.main-nav h2 {
+  color: gray;
+  font-size: 30px;
+}
+
+.main-nav span {
+  color: lightseagreen;
+}
+
+.tab-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  border-bottom: darkcyan 1px solid;
+}
+
+.tab-bar button {
+  flex: 1;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.tab-bar button:focus {
+  outline: none;
+  font-size: 15px;
+  color: darkcyan;
+}
+
+#container-markets {
+  margin-top: 20px;
+  max-height: 800px;
+  overflow: auto;
+}
+
+#tickers {
+  padding: 20px;
+  width: 100%;
+  border-spacing: 0;
+  border: cyan 1px solid;
+}
+
+#tickers tr:hover {
+  background-color: cyan;
+}
+
+#tickers tbody :hover {
+  overflow: auto;
+  max-height: 40px;
+  background-color: darkcyan;
+}
+
+#tickers tbody {
+  background-color: darkcyan;
+  color: white;
+}
+
+.description {
+  margin-top: 20px;
+  text-align: center;
+  border: black 1px solid;
+  color: #2f2f2f;
+}
+
+.desc {
+  text-align: initial;
+  display: flex;
+  padding: 20px;
+}
+
+.desc div {
+  flex: 1;
+}
+
+.desc .details {
+  margin-left: 10%;
+}
+
+.desc .price {
+  margin-right: 10%;
+  text-align: end;
+}
+
+.description button {
+  outline: none;
+  border: none;
+  background: none;
+  background-color: green;
+  border: solid 1px darkgreen;
+  color: white;
+  padding: 20px;
+  margin-bottom: 10px;
+  width: 150px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.description button:hover {
+  font-size: 14px;
+}
+
+#tickers a {
+  color: inherit;
+}
+
+#ticker-container {
+  text-align: center;
+  margin-top: 20px;
+}
