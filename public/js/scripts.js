@@ -142,6 +142,7 @@ const tickerFunction = async () => {
 
   const tbl = document.createElement("table");
   tbl.style.width = "100%";
+  tbl.id = "tbl1";
   row1 = document.createElement("tr");
   r1c1 = document.createElement("td");
   r1c2 = document.createElement("td");
@@ -222,16 +223,48 @@ const tickerFunction = async () => {
   row8.appendChild(r8c1);
   row8.appendChild(r8c2);
 
+  row9 = document.createElement("tr");
+  r9c1 = document.createElement("td");
+  r9c2 = document.createElement("td");
+
+  r9c1.innerHTML = "High";
+  r9c2.innerHTML = obj.ticker_market.high;
+
+  row9.appendChild(r9c1);
+  row9.appendChild(r9c2);
+
+  row10 = document.createElement("tr");
+  r10c1 = document.createElement("td");
+  r10c1.className = "pls";
+  r10c2 = document.createElement("td");
+
+  r10c1.innerHTML = "Low";
+  r10c2.innerHTML = obj.ticker_market.low;
+
+  row10.appendChild(r10c1);
+  row10.appendChild(r10c2);
+
   tbl.appendChild(row7);
   tbl.appendChild(row8);
+  tbl.appendChild(row9);
+  tbl.appendChild(row10);
   tbl.appendChild(row1);
   tbl.appendChild(row2);
   tbl.appendChild(row3);
   tbl.appendChild(row4);
   tbl.appendChild(row5);
   tbl.appendChild(row6);
-  // tbl.appendChild(row9);
-  // tbl.appendChild(row10);
+
+  r1c1.className = "pls";
+  r2c1.className = "pls";
+  r3c1.className = "pls";
+  r4c1.className = "pls";
+  r5c1.className = "pls";
+  r6c1.className = "pls";
+  r7c1.className = "pls";
+  r8c1.className = "pls";
+  r9c1.className = "pls";
+  r10c1.className = "pls";
   document.getElementById("ticker-container").appendChild(tbl);
 };
 

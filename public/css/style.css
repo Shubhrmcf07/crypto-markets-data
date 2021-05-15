@@ -137,7 +137,8 @@ ul {
   margin-top: 20px;
   text-align: center;
   border: black 1px solid;
-  color: #2f2f2f;
+  color: white;
+  background: #2f2f2f;
 }
 
 .desc {
@@ -182,6 +183,39 @@ ul {
 }
 
 #ticker-container {
-  text-align: center;
   margin-top: 20px;
+}
+
+#ticker-container table {
+  border-bottom: solid 1px rgb(80, 180, 180);
+}
+
+#ticker-container table tr {
+  border: solid;
+  padding: 0 50px;
+  border-bottom: darkcyan 1px solid !important;
+}
+
+#ticker-container table tr td {
+  padding: 10px;
+  font-weight: bold;
+  text-align: start;
+  padding: 15px;
+}
+
+.pls {
+  text-align: center !important;
+}
+
+#ticker-container table tr:nth-child(odd) {
+  background: rgb(80, 180, 180);
+}
+
+#ticker-container table tr:nth-child(even) {
+  background: #2f2f2f;
+  color: white;
+}
+
+#volume {
+  margin-top: 5px;
 }
