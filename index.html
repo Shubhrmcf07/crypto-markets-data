@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./public/css/style.css" />
     <title>ShubRM</title>
   </head>
-  <body onload="func()">
+  <body onload="function2('All')">
     <div class="container">
       <nav class="main-nav">
         <h2 id="main-name">Shub<span>RM</span></h2>
@@ -41,19 +41,23 @@
       </nav>
 
       <div class="tab-bar">
-        <button onclick="getMarkets('All')">
+        <button onclick="function2('All')">
           All
-        </button><button onclick="getMarkets('BTC')">BTC</button><button onclick="getMarkets('INR')">INR</button>
+        </button><button onclick="function2('BTC')">BTC</button><button onclick="function2('INR')">INR</button>
 
-        <button onclick="getMarkets('USDT')">USDT</button>
+        <button onclick="function2('USDT')">USDT</button>
         
-        <button onclick="getMarkets('BNB')">BNB</button>
+        <button onclick="function2('BNB')">BNB</button>
 
-        <button onclick="getMarkets('USD')">USD</button>
-        <button onclick="getMarkets('ETH')">ETH</button>
-        <button onclick="getMarkets('TRX')">TRX</button>
-        <button onclick="getMarkets('USDC')">USDC</button>
-        <button onclick="getMarkets('BUSD')">BUSD</button>
+        <button onclick="function2('USD')">USD</button>
+        <button onclick="function2('ETH')">ETH</button>
+        <button onclick="function2('TRX')">TRX</button>
+        <button onclick="function2('USDC')">USDC</button>
+        <button onclick="function2('BUSD')">BUSD</button>
+
+        <button onclick="function2('DAI')">DAI</button>
+
+        <button onclick="function2('TUSD')">TUSD</button>
       </div>
 
       <div id="container-markets">

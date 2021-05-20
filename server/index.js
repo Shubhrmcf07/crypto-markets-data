@@ -26,7 +26,6 @@ app.get("/tickers", async (req, res) => {
       const currency = req.query.currency;
       body = JSON.parse(body);
       const regex = new RegExp(`${currency}$`);
-
       if (currency && currency != "All") {
         for (var value = 0; value < body.length; value++) {
           if (body[value].market.match(regex) == null) {
